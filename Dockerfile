@@ -6,3 +6,4 @@ ENV PATH $PATH:/opt/md2pdf:/nodejs/bin
 RUN mkdir /opt/md2pdf && cd /opt/md2pdf && npm install markdown-pdf
 COPY md2pdf.js md2pdf_all.sh /opt/md2pdf/
 ENTRYPOINT /opt/md2pdf/md2pdf_all.sh
+CMD ["/bin/bash"]
