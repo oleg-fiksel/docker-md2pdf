@@ -10,5 +10,5 @@ docker run --rm --network=none -v /path/to/my/markdown/files:/input olegfiksel/m
 # convert all files
 
 ```
-docker run --rm --network=none -v /path/to/my/markdown/files:/input olegfiksel/md2pdf:latest
+docker run --rm --network=none -v /path/to/my/markdown/files:/input olegfiksel/md2pdf:latest /opt/md2pdf/md2pdf_all.sh
 ```
